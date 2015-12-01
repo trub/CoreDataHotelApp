@@ -48,6 +48,7 @@
 }
 
 
+
 - (void)seedTheDatabase {    
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Hotel"];
     
@@ -64,11 +65,42 @@
         NSError *jsonError;
         NSDictionary *rootObject =[NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error:&jsonError];
         
-        NSLog(@"the rootO is %@",rootObject);
+        if (jsonError) {
+            NSLog(@"error in parsing json");
+            return;
+        }
         
+        hotels = rootObject[@"Hotels"];
+        
+        for (NSDictionary *hotel in hotels) {
+            
+            Hotel *jsonHotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
+            jsonHotel.name = hotel[@"name"];
+            jsonHotel.location = hotel[@"location"];
+            jsonHotel.rating = hotel[@"rating"];
+            
+            NSLog(@"this %@", jsonHotel);
+            
+            rooms = hotel[@"room"];
+            
+            for (NSDictionary *room in rooms) {
+                
+                Room *jsonRoom = [NSEntityDescription insertNewObjectForEntityForName:@"Room" inManagedObjectContext:self.managedObjectContext];
+                jsonRoom.number = room[@"number"];
+                jsonRoom.beds = room[@"beds"];
+                jsonRoom.rate = room[@"rate"];
+                jsonRoom.hotel = jsonHotel;
+            }
+        
+        }
+        
+        
+    
     }
     
 }
+
+
 
 
 
