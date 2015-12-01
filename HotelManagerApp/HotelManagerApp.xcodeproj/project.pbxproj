@@ -23,6 +23,7 @@
 		E1CA08491C0E51B8001E52D1 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA083F1C0E51B8001E52D1 /* Room.m */; };
 		E1CA084A1C0E51B8001E52D1 /* Hotel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA08411C0E51B8001E52D1 /* Hotel+CoreDataProperties.m */; };
 		E1CA084B1C0E51B8001E52D1 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA08431C0E51B8001E52D1 /* Hotel.m */; };
+		E1CA084E1C0E52BD001E52D1 /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CA084D1C0E52BD001E52D1 /* hotels.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		E1CA08411C0E51B8001E52D1 /* Hotel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hotel+CoreDataProperties.m"; sourceTree = "<group>"; };
 		E1CA08421C0E51B8001E52D1 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
 		E1CA08431C0E51B8001E52D1 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		E1CA084D1C0E52BD001E52D1 /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hotels.json; path = "../../../sea-d47-ios/week-6/nov-30-hotel/lecture-code/HotelManager/HotelManager/hotels.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		E1CA08081C0E4627001E52D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1CA084D1C0E52BD001E52D1 /* hotels.json */,
 				E1CA081C1C0E4627001E52D1 /* Info.plist */,
 				E1CA08091C0E4627001E52D1 /* main.m */,
 			);
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CA084E1C0E52BD001E52D1 /* hotels.json in Resources */,
 				E1CA081B1C0E4627001E52D1 /* LaunchScreen.storyboard in Resources */,
 				E1CA08181C0E4627001E52D1 /* Assets.xcassets in Resources */,
 			);
