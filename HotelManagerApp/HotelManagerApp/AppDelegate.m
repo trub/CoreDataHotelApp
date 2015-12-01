@@ -27,6 +27,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setRootViewController];
+    [self seedTheDatabase];
     return YES;
 }
 
@@ -45,6 +46,30 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     [self saveContext];
 }
+
+
+- (void)seedTheDatabase {    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Hotel"];
+    
+    NSError *error;
+    NSInteger count = [self.managedObjectContext countForFetchRequest:request error:&error];
+    
+    if (count == 0) {
+        NSDictionary *hotels = [[NSDictionary alloc]init];
+        NSDictionary *rooms = [[NSDictionary alloc]init];
+        
+        NSString *jsonPath = [[NSBundle mainBundle]pathForResource:@"hotels" ofType:@"json"];
+        NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+        
+        NSError *jsonError;
+        NSDictionary *rootObject =[NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error:&jsonError];
+        
+        NSLog(@"the rootO is %@",rootObject);
+        
+    }
+    
+}
+
 
 
 #pragma mark - Core Data stack
