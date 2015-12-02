@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HotelsViewController.h"
 
 @interface ViewController ()
 
@@ -14,11 +15,15 @@
 
 @implementation ViewController
 
+- (void)loadView {
+    [super loadView];
+    [self setUI];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUI];
     [self setupViewController];
-
 
 }
 
@@ -131,9 +136,22 @@
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     [lookupButton addTarget:self action:@selector(lookupButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
-    
 
 }
+
+
+- (void)browseButtonSelected:(UIButton *)sender {
+    [self.navigationController pushViewController:[[HotelsViewController alloc]init] animated:YES];
+}
+
+- (void)bookButtonSelected:(UIButton *)sender {
+    //
+}
+
+- (void)lookupButtonSelected:(UIButton *)sender {
+    //
+}
+
 
 
 @end
