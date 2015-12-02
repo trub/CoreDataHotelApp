@@ -26,6 +26,8 @@
 		E1CA084E1C0E52BD001E52D1 /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CA084D1C0E52BD001E52D1 /* hotels.json */; };
 		E1CA08501C0E727B001E52D1 /* room.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA084F1C0E727B001E52D1 /* room.png */; };
 		E1CA08521C0E85EA001E52D1 /* GB.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08511C0E85EA001E52D1 /* GB.png */; };
+		E1CA08561C0EE0A2001E52D1 /* concierge.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08551C0EE0A2001E52D1 /* concierge.png */; };
+		E1CA08581C0EE302001E52D1 /* GBH.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08571C0EE302001E52D1 /* GBH.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		E1CA084D1C0E52BD001E52D1 /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hotels.json; path = "../../../sea-d47-ios/week-6/nov-30-hotel/lecture-code/HotelManager/HotelManager/hotels.json"; sourceTree = "<group>"; };
 		E1CA084F1C0E727B001E52D1 /* room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = room.png; path = "../../../sea-d47-ios/week-6/nov-30-hotel/lecture-code/HotelManager/HotelManager/room.png"; sourceTree = "<group>"; };
 		E1CA08511C0E85EA001E52D1 /* GB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GB.png; path = ../../../GB.png; sourceTree = "<group>"; };
+		E1CA08551C0EE0A2001E52D1 /* concierge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = concierge.png; path = ../../../concierge.png; sourceTree = "<group>"; };
+		E1CA08571C0EE302001E52D1 /* GBH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GBH.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +121,7 @@
 		E1CA08221C0E46D2001E52D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E1CA08511C0E85EA001E52D1 /* GB.png */,
-				E1CA084F1C0E727B001E52D1 /* room.png */,
+				E1CA08591C0EE30F001E52D1 /* assets */,
 				E1CA080E1C0E4627001E52D1 /* ViewController.h */,
 				E1CA080F1C0E4627001E52D1 /* ViewController.m */,
 				E1CA08231C0E46DD001E52D1 /* HotelsViewController.h */,
@@ -168,6 +171,17 @@
 				E1CA08411C0E51B8001E52D1 /* Hotel+CoreDataProperties.m */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		E1CA08591C0EE30F001E52D1 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA08511C0E85EA001E52D1 /* GB.png */,
+				E1CA084F1C0E727B001E52D1 /* room.png */,
+				E1CA08551C0EE0A2001E52D1 /* concierge.png */,
+				E1CA08571C0EE302001E52D1 /* GBH.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1CA08521C0E85EA001E52D1 /* GB.png in Resources */,
+				E1CA08581C0EE302001E52D1 /* GBH.png in Resources */,
 				E1CA08501C0E727B001E52D1 /* room.png in Resources */,
 				E1CA084E1C0E52BD001E52D1 /* hotels.json in Resources */,
 				E1CA081B1C0E4627001E52D1 /* LaunchScreen.storyboard in Resources */,
+				E1CA08561C0EE0A2001E52D1 /* concierge.png in Resources */,
 				E1CA08181C0E4627001E52D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

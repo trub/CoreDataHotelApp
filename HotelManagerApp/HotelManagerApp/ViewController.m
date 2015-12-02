@@ -17,11 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
+    [self setupViewController];
+
 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+
+- (void)setupViewController {
+    [self.navigationItem setTitle:@"GRAND BUDAPEST HOTEL"];
+//    self.navigationItem.title = [UIColor colorWithRed:1.00 green:0.83 blue:0.54 alpha:1.0];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.96 green:0.09 blue:0.09 alpha:1.0];
+     
 }
 
 
@@ -32,13 +42,13 @@
     UIButton *bookButton = [[UIButton alloc]init];
     UIButton *lookupButton = [[UIButton alloc]init];
     
-    UIImage *headerImage = [UIImage imageNamed:@"GB"];
+    UIImage *headerImage = [UIImage imageNamed:@"GBH"];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:headerImage];
     
     CGFloat navigationBarHeight = CGRectGetHeight(self.navigationController.navigationBar.frame);
     CGFloat itemSize = (CGFloat) (self.view.frame.size.height - navigationBarHeight) /4;
 
-    imageView.frame = CGRectMake(0.0, navigationBarHeight, CGRectGetWidth(self.view.frame), itemSize);
+    imageView.frame = CGRectMake(0.0, 65.0, CGRectGetWidth(self.view.frame), 250.0);
     
     imageView.contentMode = UIViewContentModeScaleAspectFill;
     imageView.clipsToBounds = YES;
@@ -48,14 +58,14 @@
     [bookButton setTitle:@"Book" forState:UIControlStateNormal];
     [lookupButton setTitle:@"Lookup" forState:UIControlStateNormal];
     
-    [browseButton setBackgroundColor:[UIColor colorWithRed:1.00 green:0.90 blue:0.60 alpha:1.0]];
-    [bookButton setBackgroundColor:[UIColor colorWithRed:1.00 green:0.85 blue:0.40 alpha:1.0]];
-    [lookupButton setBackgroundColor:[UIColor colorWithRed:0.95 green:0.76 blue:0.20 alpha:1.0]];
+    [browseButton setBackgroundColor:[UIColor colorWithRed:0.40 green:0.25 blue:0.40 alpha:1.0]];
+    [bookButton setBackgroundColor:[UIColor colorWithRed:0.34 green:0.20 blue:0.34 alpha:1.0]];
+    [lookupButton setBackgroundColor:[UIColor colorWithRed:0.28 green:0.10 blue:0.28 alpha:1.0]];
     
 
-    [browseButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
-    [bookButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
-    [lookupButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+    [browseButton setTitleColor:[UIColor colorWithRed:1.00 green:0.83 blue:0.54 alpha:1.0]forState:UIControlStateNormal];
+    [bookButton setTitleColor:[UIColor colorWithRed:1.00 green:0.83 blue:0.54 alpha:1.0] forState:UIControlStateNormal];
+    [lookupButton setTitleColor:[UIColor colorWithRed:1.00 green:0.83 blue:0.54 alpha:1.0] forState:UIControlStateNormal];
 
     [browseButton setTranslatesAutoresizingMaskIntoConstraints:NO];
     [bookButton setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -64,7 +74,7 @@
     
     
     NSLayoutConstraint *imageViewLeading = [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *imageViewTop = [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:navigationBarHeight];
+    NSLayoutConstraint *imageViewTop = [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
     NSLayoutConstraint *imageViewTrailing = [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0];
     
     
@@ -84,9 +94,9 @@
     
     // Setup equal height.
      NSLayoutConstraint *imageViewHeight = [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.0 constant:itemSize];
-    NSLayoutConstraint *bookButtonHeight = [NSLayoutConstraint constraintWithItem:bookButton attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *browseButtonHeight = [NSLayoutConstraint constraintWithItem:browseButton attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *lookupButtonHeight = [NSLayoutConstraint constraintWithItem:lookupButton attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0.0];
+    NSLayoutConstraint *bookButtonHeight = [NSLayoutConstraint constraintWithItem:bookButton attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:0.56 constant:0.0];
+    NSLayoutConstraint *browseButtonHeight = [NSLayoutConstraint constraintWithItem:browseButton attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:0.56 constant:0.0];
+    NSLayoutConstraint *lookupButtonHeight = [NSLayoutConstraint constraintWithItem:lookupButton attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:0.56 constant:0.0];
     
     [self.view addSubview:imageView];
     [self.view addSubview:browseButton];
