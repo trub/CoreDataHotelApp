@@ -74,12 +74,11 @@
         
         for (NSDictionary *hotel in hotels) {
             
-            Hotel *jsonHotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.managedObjectContext];
+            Hotel *jsonHotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext: self.managedObjectContext];
             jsonHotel.name = hotel[@"name"];
             jsonHotel.location = hotel[@"location"];
             jsonHotel.rating = hotel[@"rating"];
             
-            NSLog(@"this %@", jsonHotel);
             
             rooms = hotel[@"room"];
             
@@ -90,11 +89,21 @@
                 jsonRoom.beds = room[@"beds"];
                 jsonRoom.rate = room[@"rate"];
                 jsonRoom.hotel = jsonHotel;
+                
+                NSLog(@"this %@", jsonHotel);
+
             }
         
         }
         
+        NSError *saveError;
+        BOOL isSaved = [self.managedObjectContext save:&saveError];
         
+        if (isSaved) {
+            NSLog(@"Saved successfully.");
+        } else {
+            NSLog(@"%@", saveError.localizedDescription);
+        }
     
     }
     
