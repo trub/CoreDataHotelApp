@@ -7,6 +7,7 @@
 //
 
 #import "DateViewController.h"
+#import "AvailabilityViewController.h"
 
 @interface DateViewController ()
 
@@ -63,6 +64,9 @@
         
         return;
     }
+
+    AvailabilityViewController *availabilityController = [[AvailabilityViewController alloc]init];
+    [self.navigationController pushViewController:availabilityController animated:YES];
     
 }
 

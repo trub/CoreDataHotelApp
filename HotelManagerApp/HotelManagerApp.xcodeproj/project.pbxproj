@@ -30,6 +30,7 @@
 		E1CA08581C0EE302001E52D1 /* GBH.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08571C0EE302001E52D1 /* GBH.png */; };
 		E1CA085B1C10B59B001E52D1 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA085A1C10B59B001E52D1 /* example.png */; };
 		E1CA085E1C10BDB5001E52D1 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA085D1C10BDB5001E52D1 /* DateViewController.m */; };
+		E1CA08651C10D0C1001E52D1 /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA08641C10D0C1001E52D1 /* AvailabilityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		E1CA085A1C10B59B001E52D1 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		E1CA085C1C10BDB5001E52D1 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		E1CA085D1C10BDB5001E52D1 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		E1CA08631C10D0C1001E52D1 /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
+		E1CA08641C10D0C1001E52D1 /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 			children = (
 				E1CA085C1C10BDB5001E52D1 /* DateViewController.h */,
 				E1CA085D1C10BDB5001E52D1 /* DateViewController.m */,
+				E1CA08631C10D0C1001E52D1 /* AvailabilityViewController.h */,
+				E1CA08641C10D0C1001E52D1 /* AvailabilityViewController.m */,
 			);
 			name = Book;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1CA08251C0E46DD001E52D1 /* HotelsViewController.m in Sources */,
+				E1CA08651C10D0C1001E52D1 /* AvailabilityViewController.m in Sources */,
 				E1CA08101C0E4627001E52D1 /* ViewController.m in Sources */,
 				E1CA08461C0E51B8001E52D1 /* Guest+CoreDataProperties.m in Sources */,
 				E1CA08481C0E51B8001E52D1 /* Room+CoreDataProperties.m in Sources */,
