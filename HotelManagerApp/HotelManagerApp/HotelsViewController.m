@@ -101,15 +101,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 150.0;
+    return 250.0;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    UIImage *headerImage = [UIImage imageNamed:@"hotel"];
+    UIImage *headerImage = [UIImage imageNamed:@"concierge"];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:headerImage];
     
-    imageView.frame = CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.frame), 150.0);
+    imageView.frame = CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.frame), 250.0);
     
     imageView.contentMode = UIViewContentModeScaleAspectFill;
     imageView.clipsToBounds = YES;
