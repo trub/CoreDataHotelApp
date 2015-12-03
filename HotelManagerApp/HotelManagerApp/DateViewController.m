@@ -31,6 +31,9 @@
 
 - (void)setNavBar{
     [self setTitle: @"Select an End Date"];
+    
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dateSelectedButtonPressed:)]];
+
 }
 
 
@@ -39,11 +42,31 @@
     self.picksEndDate = [[UIDatePicker alloc]init];
     self.picksEndDate.datePickerMode = UIDatePickerModeDate;
     self.picksEndDate.frame = CGRectMake(0, 64.0, CGRectGetWidth(self.view.frame), 200.0);
-    self.picksEndDate.tintColor = [UIColor redColor];
     [self.picksEndDate setValue:[UIColor whiteColor] forKey:@"textColor"];
     
     [self.view addSubview:self.picksEndDate];
 }
+
+- (void)dateSelectedButtonPressed:(UIBarButtonItem *)sender {
+    
+    NSDate *endDate = [self.picksEndDate date];
+    
+    if ([[NSDate date]timeIntervalSinceReferenceDate]>[endDate timeIntervalSinceReferenceDate]) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"nooooooooo" message:@"you needed a date from the future" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"FINE" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            self.picksEndDate.date = [NSDate date];
+        }];
+        
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+        
+        return;
+    }
+    
+}
+
+
 
 
 @end
