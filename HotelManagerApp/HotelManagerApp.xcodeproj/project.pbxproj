@@ -29,6 +29,7 @@
 		E1CA08561C0EE0A2001E52D1 /* concierge.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08551C0EE0A2001E52D1 /* concierge.png */; };
 		E1CA08581C0EE302001E52D1 /* GBH.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08571C0EE302001E52D1 /* GBH.png */; };
 		E1CA085B1C10B59B001E52D1 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA085A1C10B59B001E52D1 /* example.png */; };
+		E1CA085E1C10BDB5001E52D1 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA085D1C10BDB5001E52D1 /* DateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		E1CA08551C0EE0A2001E52D1 /* concierge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = concierge.png; path = ../../../concierge.png; sourceTree = "<group>"; };
 		E1CA08571C0EE302001E52D1 /* GBH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GBH.png; sourceTree = "<group>"; };
 		E1CA085A1C10B59B001E52D1 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		E1CA085C1C10BDB5001E52D1 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		E1CA085D1C10BDB5001E52D1 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +105,10 @@
 			children = (
 				E1CA080B1C0E4627001E52D1 /* AppDelegate.h */,
 				E1CA080C1C0E4627001E52D1 /* AppDelegate.m */,
-				E1CA08221C0E46D2001E52D1 /* Controllers */,
+				E1CA080E1C0E4627001E52D1 /* ViewController.h */,
+				E1CA080F1C0E4627001E52D1 /* ViewController.m */,
+				E1CA08221C0E46D2001E52D1 /* Browse */,
+				E1CA085F1C10BDB9001E52D1 /* Book */,
 				E1CA08321C0E47F1001E52D1 /* View */,
 				E1CA08331C0E47FF001E52D1 /* Model */,
 				E1CA08081C0E4627001E52D1 /* Supporting Files */,
@@ -113,6 +119,7 @@
 		E1CA08081C0E4627001E52D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1CA08591C0EE30F001E52D1 /* assets */,
 				E1CA084D1C0E52BD001E52D1 /* hotels.json */,
 				E1CA081C1C0E4627001E52D1 /* Info.plist */,
 				E1CA08091C0E4627001E52D1 /* main.m */,
@@ -120,18 +127,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E1CA08221C0E46D2001E52D1 /* Controllers */ = {
+		E1CA08221C0E46D2001E52D1 /* Browse */ = {
 			isa = PBXGroup;
 			children = (
-				E1CA08591C0EE30F001E52D1 /* assets */,
-				E1CA080E1C0E4627001E52D1 /* ViewController.h */,
-				E1CA080F1C0E4627001E52D1 /* ViewController.m */,
 				E1CA08231C0E46DD001E52D1 /* HotelsViewController.h */,
 				E1CA08241C0E46DD001E52D1 /* HotelsViewController.m */,
 				E1CA08261C0E46EA001E52D1 /* RoomsViewController.h */,
 				E1CA08271C0E46EA001E52D1 /* RoomsViewController.m */,
 			);
-			name = Controllers;
+			name = Browse;
 			sourceTree = "<group>";
 		};
 		E1CA08321C0E47F1001E52D1 /* View */ = {
@@ -185,6 +189,15 @@
 				E1CA08571C0EE302001E52D1 /* GBH.png */,
 			);
 			name = assets;
+			sourceTree = "<group>";
+		};
+		E1CA085F1C10BDB9001E52D1 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA085C1C10BDB5001E52D1 /* DateViewController.h */,
+				E1CA085D1C10BDB5001E52D1 /* DateViewController.m */,
+			);
+			name = Book;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 				E1CA08451C0E51B8001E52D1 /* Reservation.m in Sources */,
 				E1CA080D1C0E4627001E52D1 /* AppDelegate.m in Sources */,
 				E1CA08491C0E51B8001E52D1 /* Room.m in Sources */,
+				E1CA085E1C10BDB5001E52D1 /* DateViewController.m in Sources */,
 				E1CA080A1C0E4627001E52D1 /* main.m in Sources */,
 				E1CA084B1C0E51B8001E52D1 /* Hotel.m in Sources */,
 				E1CA08471C0E51B8001E52D1 /* Guest.m in Sources */,

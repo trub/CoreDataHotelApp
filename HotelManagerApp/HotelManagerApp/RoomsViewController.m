@@ -68,8 +68,6 @@
     Room *room = (Room *)[self.hotel.rooms allObjects][indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"Room: %i (%i beds, $%0.2f per night)", room.number.intValue, room.beds.intValue, room.rate.floatValue];
     
-    
-    
     return cell;
 }
 
