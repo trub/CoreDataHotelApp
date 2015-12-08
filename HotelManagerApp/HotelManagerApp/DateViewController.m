@@ -14,7 +14,6 @@
 @property (strong, nonatomic) UIDatePicker *startDate;
 @property (strong, nonatomic) UIDatePicker *endDate;
 
-
 @end
 
 @implementation DateViewController
@@ -74,8 +73,10 @@
         
         return;
     }
-
+    
     AvailabilityViewController *availabilityController = [[AvailabilityViewController alloc]init];
+    availabilityController.startDate = self.startDate.date;
+    availabilityController.endDate = self.endDate.date;
     [self.navigationController pushViewController:availabilityController animated:YES];
     
 }
