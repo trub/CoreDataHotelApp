@@ -1,24 +1,26 @@
 //
-//  AvailabilityViewController.m
+//  BookViewController.m
 //  HotelManagerApp
 //
-//  Created by Matthew Weintrub on 12/3/15.
+//  Created by Matthew Weintrub on 12/8/15.
 //  Copyright © 2015 matthew weintrub. All rights reserved.
 //
 
-#import "AvailabilityViewController.h"
+#import "BookViewController.h"
 
-@interface AvailabilityViewController ()
+@interface BookViewController ()
 
 @end
 
-@implementation AvailabilityViewController
+@implementation BookViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

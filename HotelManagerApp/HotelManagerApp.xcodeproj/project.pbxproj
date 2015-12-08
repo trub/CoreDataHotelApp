@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1AAF8471C17789800889D0A /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AAF8461C17789800889D0A /* BookViewController.m */; };
 		E1CA080A1C0E4627001E52D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA08091C0E4627001E52D1 /* main.m */; };
 		E1CA080D1C0E4627001E52D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA080C1C0E4627001E52D1 /* AppDelegate.m */; };
 		E1CA08101C0E4627001E52D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA080F1C0E4627001E52D1 /* ViewController.m */; };
@@ -25,8 +26,6 @@
 		E1CA084B1C0E51B8001E52D1 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA08431C0E51B8001E52D1 /* Hotel.m */; };
 		E1CA084E1C0E52BD001E52D1 /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CA084D1C0E52BD001E52D1 /* hotels.json */; };
 		E1CA08501C0E727B001E52D1 /* room.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA084F1C0E727B001E52D1 /* room.png */; };
-		E1CA08521C0E85EA001E52D1 /* GB.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08511C0E85EA001E52D1 /* GB.png */; };
-		E1CA08561C0EE0A2001E52D1 /* concierge.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08551C0EE0A2001E52D1 /* concierge.png */; };
 		E1CA08581C0EE302001E52D1 /* GBH.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA08571C0EE302001E52D1 /* GBH.png */; };
 		E1CA085B1C10B59B001E52D1 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CA085A1C10B59B001E52D1 /* example.png */; };
 		E1CA085E1C10BDB5001E52D1 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA085D1C10BDB5001E52D1 /* DateViewController.m */; };
@@ -34,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1AAF8451C17789800889D0A /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		E1AAF8461C17789800889D0A /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 		E1CA08051C0E4627001E52D1 /* HotelManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CA08091C0E4627001E52D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1CA080B1C0E4627001E52D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,6 +202,8 @@
 				E1CA085D1C10BDB5001E52D1 /* DateViewController.m */,
 				E1CA08631C10D0C1001E52D1 /* AvailabilityViewController.h */,
 				E1CA08641C10D0C1001E52D1 /* AvailabilityViewController.m */,
+				E1AAF8451C17789800889D0A /* BookViewController.h */,
+				E1AAF8461C17789800889D0A /* BookViewController.m */,
 			);
 			name = Book;
 			sourceTree = "<group>";
@@ -263,13 +266,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1CA08521C0E85EA001E52D1 /* GB.png in Resources */,
 				E1CA08581C0EE302001E52D1 /* GBH.png in Resources */,
 				E1CA085B1C10B59B001E52D1 /* example.png in Resources */,
 				E1CA08501C0E727B001E52D1 /* room.png in Resources */,
 				E1CA084E1C0E52BD001E52D1 /* hotels.json in Resources */,
 				E1CA081B1C0E4627001E52D1 /* LaunchScreen.storyboard in Resources */,
-				E1CA08561C0EE0A2001E52D1 /* concierge.png in Resources */,
 				E1CA08181C0E4627001E52D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +298,7 @@
 				E1CA08311C0E47E1001E52D1 /* HotelManagerApp.xcdatamodeld in Sources */,
 				E1CA08281C0E46EA001E52D1 /* RoomsViewController.m in Sources */,
 				E1CA084A1C0E51B8001E52D1 /* Hotel+CoreDataProperties.m in Sources */,
+				E1AAF8471C17789800889D0A /* BookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
