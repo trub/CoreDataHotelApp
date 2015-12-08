@@ -11,7 +11,9 @@
 
 @interface DateViewController ()
 
-@property (strong, nonatomic) UIDatePicker *picksEndDate;
+@property (strong, nonatomic) UIDatePicker *startDate;
+@property (strong, nonatomic) UIDatePicker *endDate;
+
 
 @end
 
@@ -40,23 +42,31 @@
 
 
 - (void)setDatePicker{
-    self.picksEndDate = [[UIDatePicker alloc]init];
-    self.picksEndDate.datePickerMode = UIDatePickerModeDate;
-    self.picksEndDate.frame = CGRectMake(0, 64.0, CGRectGetWidth(self.view.frame), 200.0);
-    [self.picksEndDate setValue:[UIColor whiteColor] forKey:@"textColor"];
+    self.startDate = [[UIDatePicker alloc]init];
+    self.endDate = [[UIDatePicker alloc]init];
     
-    [self.view addSubview:self.picksEndDate];
+    self.startDate.datePickerMode = UIDatePickerModeDate;
+    self.endDate.datePickerMode = UIDatePickerModeDate;
+    
+    self.startDate.frame = CGRectMake(0, 64.0, CGRectGetWidth(self.view.frame), 200.0);
+    self.endDate.frame = CGRectMake(0, 264.0, CGRectGetWidth(self.view.frame), 200.0);
+
+    [self.startDate setValue:[UIColor whiteColor] forKey:@"textColor"];
+    [self.endDate setValue:[UIColor whiteColor] forKey:@"textColor"];
+    
+    [self.view addSubview:self.startDate];
+    [self.view addSubview:self.endDate];
 }
 
 - (void)dateSelectedButtonPressed:(UIBarButtonItem *)sender {
     
-    NSDate *endDate = [self.picksEndDate date];
+    NSDate *endDate = [self.endDate date];
     
     if ([[NSDate date]timeIntervalSinceReferenceDate]>[endDate timeIntervalSinceReferenceDate]) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"nooooooooo" message:@"you needed a date from the future" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"FINE" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            self.picksEndDate.date = [NSDate date];
+            self.endDate.date = [NSDate date];
         }];
         
         [alertController addAction:okAction];
