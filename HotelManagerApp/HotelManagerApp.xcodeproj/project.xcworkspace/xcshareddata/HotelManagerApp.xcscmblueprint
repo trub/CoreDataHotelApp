@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E3E54EF42620BCD1F94F9099319E5A78F5C2AF29",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "660CFF352752B233445C9E5A67F8C3D8352A1D15" : 0,
+    "E3E54EF42620BCD1F94F9099319E5A78F5C2AF29" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BE13D9DE-E982-4AC1-B35B-FCAA8C2161F9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "660CFF352752B233445C9E5A67F8C3D8352A1D15" : "sea-d47-ios\/",
+    "E3E54EF42620BCD1F94F9099319E5A78F5C2AF29" : "CoreDataHotelApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HotelManagerApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HotelManagerApp\/HotelManagerApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/codefellows\/sea-d47-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "660CFF352752B233445C9E5A67F8C3D8352A1D15"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/trub\/CoreDataHotelApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3E54EF42620BCD1F94F9099319E5A78F5C2AF29"
+    }
+  ]
+}
