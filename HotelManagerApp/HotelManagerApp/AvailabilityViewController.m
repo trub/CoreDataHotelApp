@@ -28,6 +28,7 @@
         
         AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
         NSManagedObjectContext *context = delegate.managedObjectContext;
+        
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Reservation"];
         request.predicate = [NSPredicate predicateWithFormat:@"startDate <= %@ AND endDate >= %@", self.startDate, self.endDate];
         
