@@ -30,6 +30,8 @@
     [self setupTextfield];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(bookButtonPressed:)];
     
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.34 green:0.20 blue:0.34 alpha:1.0]];
+
 }
 
 -(void)loadView {

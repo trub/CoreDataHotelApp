@@ -60,7 +60,7 @@
 -(void)loadView {
     [super loadView];
     
-    self.view.backgroundColor = [UIColor redColor];
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.34 green:0.20 blue:0.34 alpha:1.0]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HotelsViewController.h"
 #import "DateViewController.h"
+#import "LookupViewController.h"
 
 
 @interface ViewController ()
@@ -151,7 +152,7 @@
 }
 
 - (void)lookupButtonSelected:(UIButton *)sender {
-    //
+    [self.navigationController pushViewController:[[LookupViewController alloc]init] animated:YES];
 }
 
 

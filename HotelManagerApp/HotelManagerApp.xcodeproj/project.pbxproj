@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E1AAF8471C17789800889D0A /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AAF8461C17789800889D0A /* BookViewController.m */; };
+		E1AAF84A1C1790A800889D0A /* LookupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AAF8491C1790A800889D0A /* LookupViewController.m */; };
 		E1CA080A1C0E4627001E52D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA08091C0E4627001E52D1 /* main.m */; };
 		E1CA080D1C0E4627001E52D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA080C1C0E4627001E52D1 /* AppDelegate.m */; };
 		E1CA08101C0E4627001E52D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA080F1C0E4627001E52D1 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		E1AAF8451C17789800889D0A /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
 		E1AAF8461C17789800889D0A /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		E1AAF8481C1790A800889D0A /* LookupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupViewController.h; sourceTree = "<group>"; };
+		E1AAF8491C1790A800889D0A /* LookupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupViewController.m; sourceTree = "<group>"; };
 		E1CA08051C0E4627001E52D1 /* HotelManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CA08091C0E4627001E52D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1CA080B1C0E4627001E52D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1AAF84B1C1790AC00889D0A /* Lookup */ = {
+			isa = PBXGroup;
+			children = (
+				E1AAF8481C1790A800889D0A /* LookupViewController.h */,
+				E1AAF8491C1790A800889D0A /* LookupViewController.m */,
+			);
+			name = Lookup;
+			sourceTree = "<group>";
+		};
 		E1CA07FC1C0E4627001E52D1 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 				E1CA080F1C0E4627001E52D1 /* ViewController.m */,
 				E1CA08221C0E46D2001E52D1 /* Browse */,
 				E1CA085F1C10BDB9001E52D1 /* Book */,
+				E1AAF84B1C1790AC00889D0A /* Lookup */,
 				E1CA08321C0E47F1001E52D1 /* View */,
 				E1CA08331C0E47FF001E52D1 /* Model */,
 				E1CA08081C0E4627001E52D1 /* Supporting Files */,
@@ -282,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AAF84A1C1790A800889D0A /* LookupViewController.m in Sources */,
 				E1CA08251C0E46DD001E52D1 /* HotelsViewController.m in Sources */,
 				E1CA08651C10D0C1001E52D1 /* AvailabilityViewController.m in Sources */,
 				E1CA08101C0E4627001E52D1 /* ViewController.m in Sources */,

@@ -23,7 +23,7 @@
     [self setNavBar];
     [self setDatePicker];
     
-    [self.view setBackgroundColor:[UIColor colorWithRed:0.40 green:0.25 blue:0.40 alpha:1.0]];
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.34 green:0.20 blue:0.34 alpha:1.0]];
 
 }
 
