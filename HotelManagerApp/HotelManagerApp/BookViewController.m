@@ -7,6 +7,8 @@
 //
 
 #import "BookViewController.h"
+#import "Hotel.h"
+
 
 @interface BookViewController ()
 
@@ -16,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@", self.room.hotel.name);
 }
 
 - (void)didReceiveMemoryWarning {

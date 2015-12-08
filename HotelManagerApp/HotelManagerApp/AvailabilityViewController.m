@@ -12,6 +12,7 @@
 #import "Hotel.h"
 #import "Room.h"
 #import "Reservation.h"
+#import "BookViewController.h"
 
 @interface AvailabilityViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -123,5 +124,13 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Room *room = (Room *)self.datasource[indexPath.row];
+    BookViewController *bookViewController = [[BookViewController alloc]init];
+    bookViewController.room = room;
+    [self.navigationController pushViewController:bookViewController animated:YES];
+    
+}
 
 @end
