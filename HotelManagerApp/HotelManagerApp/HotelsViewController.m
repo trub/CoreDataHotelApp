@@ -106,7 +106,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    UIImage *headerImage = [UIImage imageNamed:@"concierge"];
+    UIImage *headerImage = [UIImage imageNamed:@"Hotel"];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:headerImage];
     
     imageView.frame = CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.frame), 250.0);

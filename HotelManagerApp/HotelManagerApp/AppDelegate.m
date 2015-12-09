@@ -80,7 +80,7 @@
             jsonHotel.rating = hotel[@"rating"];
             
             
-            rooms = hotel[@"room"];
+            rooms = hotel[@"rooms"];
             
             for (NSDictionary *room in rooms) {
                 
