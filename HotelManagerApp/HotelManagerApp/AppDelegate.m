@@ -8,11 +8,13 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-
 #import "Hotel.h"
 #import "Room.h"
 #import "Reservation.h"
 #import "Guest.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 
 @interface AppDelegate ()
 
@@ -28,6 +30,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setRootViewController];
     [self seedTheDatabase];
+    [Fabric with:@[[Crashlytics class]]];
     return YES;
 }
 
